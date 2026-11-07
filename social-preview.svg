@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+<title id="title">SilvOS | Your system. Your rules.</title>
+<desc id="desc">Dark navy and gold SilvOS launch identity.</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#060E18"/><stop offset=".55" stop-color="#101E2B"/><stop offset="1" stop-color="#0A1A23"/></linearGradient>
+<linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#EACD90"/><stop offset=".55" stop-color="#E5D3A5"/><stop offset="1" stop-color="#83DACA"/></linearGradient>
+<radialGradient id="glass"><stop stop-color="#71CEBA" stop-opacity=".32"/><stop offset=".58" stop-color="#153E4C" stop-opacity=".23"/><stop offset="1" stop-color="#153E4C" stop-opacity="0"/></radialGradient>
+<pattern id="grid" width="46" height="46" patternUnits="userSpaceOnUse"><path d="M46 0H0V46" stroke="#A5CFCE" stroke-opacity=".065" fill="none"/></pattern>
+</defs>
+<rect width="1200" height="630" fill="url(#bg)"/><rect width="1200" height="630" fill="url(#grid)"/>
+<rect x="0" y="0" width="1200" height="4" fill="url(#line)"/>
+<circle cx="940" cy="315" r="290" fill="url(#glass)"/>
+<circle cx="940" cy="315" r="227" stroke="#A3DDD1" stroke-opacity=".25" fill="none"/>
+<ellipse cx="940" cy="315" rx="250" ry="132" stroke="#B6D6CD" stroke-opacity=".2" fill="none" transform="rotate(-32 940 315)"/>
+<ellipse cx="940" cy="315" rx="246" ry="166" stroke="#E7C996" stroke-opacity=".23" fill="none" transform="rotate(53 940 315)"/>
+<circle cx="940" cy="315" r="147" fill="#0D2837" fill-opacity=".48" stroke="#DAD5B5" stroke-opacity=".38"/>
+<path d="M874 249H1010L980 280H902L877 315H990L1013 348H875L902 379H1011" stroke="url(#line)" stroke-width="17" fill="none" stroke-linecap="square"/>
+<text x="85" y="131" font-family="Arial,Helvetica,sans-serif" font-size="22" fill="#E9C98E" font-weight="700" letter-spacing="5">INDEPENDENT LINUX PROJECT</text>
+<text x="78" y="321" font-family="Arial,Helvetica,sans-serif" font-size="143" fill="#F0F6F4" font-weight="800" letter-spacing="-8">SilvOS</text>
+<text x="85" y="397" font-family="Arial,Helvetica,sans-serif" font-size="38" fill="#DDE7E3" font-weight="600">Your system. Your rules.</text>
+<text x="85" y="467" font-family="Arial,Helvetica,sans-serif" font-size="23" fill="#9EB7B9">Liquid Glass  ·  Local-first AI  ·  User freedom</text>
+<path d="M85 524H650" stroke="url(#line)" stroke-opacity=".55"/>
+<text x="85" y="569" font-family="Arial,Helvetica,sans-serif" font-size="18" fill="#C6BEA3" letter-spacing="3">PRE-RELEASE  /  BUILT IN BRAZIL</text>
+</svg>
