@@ -1,6 +1,6 @@
 # SilvOS · Official Website
 
-[![Website](https://img.shields.io/badge/Website-silviodarko.github.io-C9A86A?style=for-the-badge)](https://silviodarko.github.io/)
+[![Website](https://img.shields.io/badge/Website-silviodarko.github.io-66BDE8?style=for-the-badge)](https://silviodarko.github.io/)
 [![Status](https://img.shields.io/badge/Status-Pre--release-22404D?style=for-the-badge)](https://silviodarko.github.io/)
 
 **Your system. Your rules.**
@@ -15,7 +15,7 @@ https://silviodarko.github.io/
 
 - [Roadmap público](https://github.com/silviodarko/silviodarko/blob/main/SILVOS_ROADMAP.md)
 - [Perfil e portfólio técnico](https://github.com/silviodarko)
-- Status: **em desenvolvimento**, sem ISO pública e sem previsão confirmada de lançamento.
+- Status: **Alpha 0.1 Live homologada em QEMU UEFI** (uso experimental privado), ainda sem ISO pública, instalador ou previsão confirmada de lançamento.
 
 ### Tecnologias da landing page
 

@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title">
 <title id="title">SilvOS monogram</title>
-<defs><linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F8E7B4"/><stop offset=".48" stop-color="#D3B77A"/><stop offset="1" stop-color="#7AD5C5"/></linearGradient><radialGradient id="b"><stop stop-color="#192E38"/><stop offset="1" stop-color="#08121D"/></radialGradient></defs>
-<rect width="120" height="120" rx="27" fill="url(#b)"/><rect x="1.5" y="1.5" width="117" height="117" rx="25.5" fill="none" stroke="#E7CF95" stroke-opacity=".3" stroke-width="2"/>
+<defs><linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#EFFBFF"/><stop offset=".48" stop-color="#92D2FF"/><stop offset="1" stop-color="#81E8F1"/></linearGradient><radialGradient id="b"><stop stop-color="#192E38"/><stop offset="1" stop-color="#08121D"/></radialGradient></defs>
+<rect width="120" height="120" rx="27" fill="url(#b)"/><rect x="1.5" y="1.5" width="117" height="117" rx="25.5" fill="none" stroke="#BFEAFF" stroke-opacity=".3" stroke-width="2"/>
 <circle cx="60" cy="60" r="46" stroke="#8CD4C3" stroke-opacity=".24" fill="none"/><path d="M34 37 H88 L75 51 H45 L33 62 H75 L88 75 H35 L47 88 H87" fill="none" stroke="url(#a)" stroke-width="8" stroke-linecap="square" stroke-linejoin="miter"/>
-<circle cx="25" cy="94" r="3" fill="#81D2C0"/><circle cx="94" cy="25" r="2.5" fill="#EDCB92"/>
+<circle cx="25" cy="94" r="3" fill="#81D2C0"/><circle cx="94" cy="25" r="2.5" fill="#B2EDFF"/>
 </svg>
