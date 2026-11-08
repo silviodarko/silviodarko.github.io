@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
-  <meta name="theme-color" content="#071019">
+  <meta name="theme-color" content="#07121f">
   <meta name="description" content="Conheça o SilvOS: uma experiência Linux independente em desenvolvimento, com desktop Liquid Glass, inteligência artificial local Jarvis e automação voltada à privacidade.">
   <meta name="author" content="SilvOS">
   <meta name="robots" content="index,follow">
@@ -12,12 +12,12 @@
   <meta property="og:locale" content="pt_BR">
   <meta property="og:site_name" content="SilvOS">
   <meta property="og:title" content="SilvOS | Your system. Your rules.">
-  <meta property="og:description" content="Linux. Liberdade. Inteligência local. Conheça a visão e o roadmap público do SilvOS. Em desenvolvimento.">
+  <meta property="og:description" content="Linux com Liquid Glass e IA local. A ISO Live Alpha 0.1 já foi validada em QEMU UEFI; ainda sem download público.">
   <meta property="og:url" content="https://silviodarko.github.io/">
   <meta property="og:image" content="https://silviodarko.github.io/social-preview.svg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="SilvOS | Your system. Your rules.">
-  <meta name="twitter:description" content="A próxima experiência Linux independente, com Liquid Glass e IA local. Pré-lançamento.">
+  <meta name="twitter:description" content="Liquid Glass, Linux e IA local. ISO Alpha 0.1 validada em VM, ainda privada.">
   <link rel="canonical" href="https://silviodarko.github.io/">
   <link rel="icon" type="image/svg+xml" href="./favicon.svg">
   <link rel="stylesheet" href="./styles.css">
@@ -77,8 +77,12 @@
           </div>
           <p class="hero-footnote">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20ZM12 7v5l3 2"/></svg>
-            Projeto em desenvolvimento · Sem ISO pública ou data de lançamento anunciada
+            Alpha 0.1 Live validada em QEMU UEFI · Sem ISO pública ou data de lançamento
           </p>
+          <div class="alpha-proof glass" aria-label="Status experimental da distribuição">
+            <span class="proof-icon" aria-hidden="true">✓</span>
+            <span><strong>Alpha 0.1 · Primeiro boot gráfico homologado</strong><small>UEFI · Niri · Noctalia · Kitty · Thunar · Rede · PipeWire | laboratório privado</small></span>
+          </div>
         </div>
         <div class="hero-art" aria-hidden="true">
           <div class="orb">
@@ -174,7 +178,7 @@
           <ul class="bullet-list">
             <li>Reconhecimento de voz com Whisper e experimentos de desempenho.</li>
             <li>Inferência local com Qwen3 e llama.cpp.</li>
-            <li>Resposta por voz com Piper; outras vozes em avaliação.</li>
+            <li>Voz local com Piper e Kokoro em evolução; integração com Zapzap ainda em validação.</li>
             <li>Integração com o desktop por ações limitadas, verificações e rollback.</li>
           </ul>
           <a href="#roadmap" class="btn btn-secondary">Ver próximos marcos <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
@@ -227,10 +231,10 @@
             <ul><li>PKGBUILD e testes de build</li><li>Arquitetura do silvos update</li><li>Assinatura real e rollback pendentes</li></ul>
           </article>
           <article class="phase glass reveal">
-            <div class="phase-top"><span class="phase-num">FASE D</span><span class="phase-badge future">Planejada</span></div>
-            <h3>Primeira ISO</h3>
-            <p>Uma distribuição instalável, testada e documentada, com suporte inicial de hardware e processo de recuperação.</p>
-            <ul><li>Imagem Live reproduzível</li><li>Testes de instalação e boot</li><li>Checksums, licenças e notas de versão</li></ul>
+            <div class="phase-top"><span class="phase-num">FASE D</span><span class="phase-badge">Alpha 0.1 validada em VM</span></div>
+            <h3>ISO Live Alpha 0.1</h3>
+            <p>Primeiro marco de boot em QEMU UEFI concluído: sessão gráfica Niri/Noctalia, aplicativos, rede e áudio verificados. Ainda sem instalador ou validação em hardware físico.</p>
+            <ul><li>ISO Live privada e checksum verificados</li><li>Boot gráfico em QEMU UEFI aprovado</li><li>Instalador, hardware real e publicação pendentes</li></ul>
           </article>
         </div>
         <div class="roadmap-more reveal">
@@ -244,12 +248,12 @@
         <div class="coming-card glass reveal">
           <span class="kicker">O próximo capítulo está sendo escrito</span>
           <h2 id="launch-heading">Built for tomorrow.<br>Designed for you.</h2>
-          <p>O SilvOS ainda não está disponível para download. Estamos construindo e validando o caminho para uma primeira versão instalável, com prioridade para segurança, estabilidade e transparência.</p>
+          <p>A primeira ISO Live experimental já passou nos testes de boot gráfico em máquina virtual. Ela permanece privada, sem instalador e sem lançamento público. Nosso próximo passo é validar mais hardware e preparar atualizações seguras.</p>
           <div class="coming-actions">
             <a href="https://github.com/silviodarko" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Acompanhar no GitHub <span aria-hidden="true">↗</span></a>
             <a href="https://github.com/silviodarko/silviodarko/blob/main/SILVOS_ROADMAP.md" class="btn btn-secondary">Roadmap público</a>
           </div>
-          <div class="coming-note">Pré-lançamento · Sem ISO pública · Sem data anunciada · Nenhum cadastro ou dado pessoal solicitado neste site</div>
+          <div class="coming-note">Alpha 0.1 homologada apenas em VM · Sem ISO pública ou instalador · Sem data de lançamento</div>
         </div>
       </div>
     </section>
