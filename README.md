@@ -21,6 +21,10 @@ https://silviodarko.github.io/
 
 HTML sem framework, CSS responsivo e JavaScript progressivo, com recursos visuais locais. Sem analytics, fontes externas, formulários, rastreadores ou cookies.
 
+### Developer Program
+
+O criador participa do **[GitHub Developer Program](https://github.com/developer)**, estudando e desenvolvendo integrações com a GitHub API. A participação é individual, sem associação ou endosso oficial do GitHub ao SilvOS.
+
 ### Desenvolvimento e privacidade
 
 Este repositório hospeda **apenas o site público**. O código principal da distribuição SilvOS permanece em repositório privado separado. A demonstração do Jarvis na página é conceitual e não envia comandos nem acessa dados pessoais.
