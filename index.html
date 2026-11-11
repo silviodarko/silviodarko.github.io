@@ -12,12 +12,12 @@
   <meta property="og:locale" content="pt_BR">
   <meta property="og:site_name" content="SilvOS">
   <meta property="og:title" content="SilvOS | Your system. Your rules.">
-  <meta property="og:description" content="Linux com Liquid Glass e IA local. A ISO Live Alpha 0.1 já foi validada em QEMU UEFI; ainda sem download público.">
+  <meta property="og:description" content="Linux com Liquid Glass e IA local. A Alpha 0.3 foi instalada em disco virtual e iniciou em QEMU UEFI sem ISO. Próximo marco: silvos update; ainda sem download público.">
   <meta property="og:url" content="https://silviodarko.github.io/">
   <meta property="og:image" content="https://silviodarko.github.io/social-preview.svg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="SilvOS | Your system. Your rules.">
-  <meta name="twitter:description" content="Liquid Glass, Linux e IA local. ISO Alpha 0.1 validada em VM, ainda privada.">
+  <meta name="twitter:description" content="Liquid Glass, Linux e IA local. Alpha 0.3 instalável validada em VM; próximo passo silvos update.">
   <link rel="canonical" href="https://silviodarko.github.io/">
   <link rel="icon" type="image/svg+xml" href="./favicon.svg">
   <link rel="stylesheet" href="./styles.css">
@@ -41,6 +41,7 @@
         <a href="#experiencia">Experiência</a>
         <a href="#jarvis">Jarvis</a>
         <a href="#roadmap">Roadmap</a>
+        <a href="#atualizacoes">Atualizações</a>
         <a href="#lancamento">Lançamento</a>
       </nav>
 
@@ -59,6 +60,7 @@
       <a href="#experiencia">Experiência</a>
       <a href="#jarvis">Jarvis</a>
       <a href="#roadmap">Roadmap</a>
+        <a href="#atualizacoes">Atualizações</a>
       <a href="#lancamento">Lançamento</a>
     </nav>
   </header>
@@ -77,11 +79,11 @@
           </div>
           <p class="hero-footnote">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20ZM12 7v5l3 2"/></svg>
-            Alpha 0.1 Live validada em QEMU UEFI · Sem ISO pública ou data de lançamento
+            Alpha 0.3 instalável validada em QEMU UEFI · Sem ISO pública ou data de lançamento
           </p>
           <div class="alpha-proof glass" aria-label="Status experimental da distribuição">
             <span class="proof-icon" aria-hidden="true">✓</span>
-            <span><strong>Alpha 0.1 · Primeiro boot gráfico homologado</strong><small>UEFI · Niri · Noctalia · Kitty · Thunar · Rede · PipeWire | laboratório privado</small></span>
+            <span><strong>Alpha 0.3 · Instalação e boot UEFI pelo disco homologados</strong><small>UEFI sem ISO · Niri · Noctalia · Rede · silvos-cli · disco sentinela íntegro | VM privada</small></span>
           </div>
         </div>
         <div class="hero-art" aria-hidden="true">
@@ -150,7 +152,7 @@
               <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 3 3 8l9 5 9-5-9-5ZM3 12l9 5 9-5M3 16l9 5 9-5"/></svg>
             </div>
             <h3>Engenharia reproduzível</h3>
-            <p>Testes, empacotamento, assinaturas e recuperação. O plano é evoluir de um protótipo pessoal para distribuição instalável.</p>
+            <p>Testes, empacotamento, assinaturas e recuperação. ISO instalável testada em VM. Próxima etapa: pacotes próprios assinados e atualizações recuperáveis.</p>
           </article>
         </div>
         <div class="tech-stack reveal" aria-label="Tecnologias do projeto">
@@ -225,16 +227,16 @@
             <ul><li>Desktop Arch + Wayland</li><li>Personalizações Liquid Glass</li><li>Protótipos de Jarvis e Ponte</li></ul>
           </article>
           <article class="phase glass reveal">
-            <div class="phase-top"><span class="phase-num">FASE C</span><span class="phase-badge future">Validação de laboratório</span></div>
+            <div class="phase-top"><span class="phase-num">FASE C</span><span class="phase-badge future">Atualizador em construção</span></div>
             <h3>Pacotes e atualizações</h3>
             <p>Evolução para pacotes próprios, atualização controlada, validação isolada, assinatura e mecanismos de recuperação.</p>
-            <ul><li>PKGBUILD e testes de build</li><li>Arquitetura do silvos update</li><li>Assinatura real e rollback pendentes</li></ul>
+            <ul><li>PKGBUILD e testes de build</li><li>silvos update --check (protótipo)</li><li>Upgrade N → N+1, chave de release e rollback pendentes</li></ul>
           </article>
           <article class="phase glass reveal">
-            <div class="phase-top"><span class="phase-num">FASE D</span><span class="phase-badge">Alpha 0.1 validada em VM</span></div>
-            <h3>ISO Live Alpha 0.1</h3>
-            <p>Primeiro marco de boot em QEMU UEFI concluído: sessão gráfica Niri/Noctalia, aplicativos, rede e áudio verificados. Ainda sem instalador ou validação em hardware físico.</p>
-            <ul><li>ISO Live privada e checksum verificados</li><li>Boot gráfico em QEMU UEFI aprovado</li><li>Instalador, hardware real e publicação pendentes</li></ul>
+            <div class="phase-top"><span class="phase-num">FASE D</span><span class="phase-badge">Alpha 0.3 validada em VM</span></div>
+            <h3>ISO instalável Alpha 0.3</h3>
+            <p>O laboratório privado aprovou a instalação em qcow2, a inicialização UEFI sem a mídia e as verificações de Niri, Noctalia, rede, CLI e disco sentinela.</p>
+            <ul><li>Instalação em disco virtual e boot sem ISO</li><li>SHA-256 do segundo disco preservado</li><li>Instalador para hardware físico e publicação pendentes</li></ul>
           </article>
         </div>
         <div class="roadmap-more reveal">
@@ -243,17 +245,44 @@
       </div>
     </section>
 
+    <section class="section updates-section" id="atualizacoes" aria-labelledby="updates-heading">
+      <div class="container updates-layout">
+        <div class="updates-copy reveal">
+          <span class="kicker">Próximo marco · Fase C</span>
+          <h2 id="updates-heading">O futuro do SilvOS cabe <strong>em um comando.</strong></h2>
+          <p>Instalar foi a primeira conquista. Agora estamos construindo a capacidade de evoluir: pacotes versionados, assinados, testados e atualizáveis sem perder a identidade Glass.</p>
+          <div class="updates-milestones">
+            <div class="updates-milestone"><span class="milestone-dot done">✓</span><div><strong>Alpha 0.3 instalada em VM</strong><small>UEFI sem ISO, Niri, Noctalia, rede, CLI e disco sentinela verificados</small></div></div>
+            <div class="updates-milestone"><span class="milestone-dot done">✓</span><div><strong>Pacote e assinatura testados</strong><small>silvos-cli e repositório GPG efêmero no CI isolado</small></div></div>
+            <div class="updates-milestone"><span class="milestone-dot">03</span><div><strong>Próximo: atualização N → N+1</strong><small>Repositório testing e recuperação em máquina virtual</small></div></div>
+          </div>
+          <a href="#roadmap" class="btn btn-secondary">Conhecer a evolução <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="updater-console glass reveal" aria-label="Prévia ilustrativa do atualizador, não disponível para uso real">
+          <div class="updater-console-head"><span class="console-lights" aria-hidden="true"><i></i><i></i><i></i></span><span>silvos / update</span><span class="console-preview">LAB PREVIEW</span></div>
+          <div class="updater-console-body">
+            <p class="console-comment"># Demonstração conceitual, não é execução real</p>
+            <p><span class="console-prompt">❯</span> silvos update --check</p>
+            <p class="console-text">Consulta à base local disponível no protótipo</p>
+            <p class="console-gap"><span class="console-prompt">❯</span> silvos update</p>
+            <p class="console-warning">Atualização bloqueada por segurança</p>
+            <p class="console-text">Aguardando repositório de release, upgrade e rollback testados em VM.</p>
+          </div>
+          <div class="updater-console-bottom"><span class="console-signal"></span> TESTING ONLY <span>Sem alterações no desktop</span></div>
+        </div>
+      </div>
+    </section>
     <section class="coming-section" id="lancamento" aria-labelledby="launch-heading">
       <div class="container">
         <div class="coming-card glass reveal">
           <span class="kicker">O próximo capítulo está sendo escrito</span>
           <h2 id="launch-heading">Built for tomorrow.<br>Designed for you.</h2>
-          <p>A primeira ISO Live experimental já passou nos testes de boot gráfico em máquina virtual. Ela permanece privada, sem instalador e sem lançamento público. Nosso próximo passo é validar mais hardware e preparar atualizações seguras.</p>
+          <p>A Alpha 0.3 já passou nos testes de instalação em disco virtual e boot UEFI sem a ISO. Agora o foco é um repositório assinado, atualizações N → N+1 em VM e recuperação. Ainda não há instalador homologado para hardware real ou lançamento público.</p>
           <div class="coming-actions">
             <a href="https://github.com/silviodarko" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Acompanhar no GitHub <span aria-hidden="true">↗</span></a>
             <a href="https://github.com/silviodarko/silviodarko/blob/main/SILVOS_ROADMAP.md" class="btn btn-secondary">Roadmap público</a>
           </div>
-          <div class="coming-note">Alpha 0.1 homologada apenas em VM · Sem ISO pública ou instalador · Sem data de lançamento</div>
+          <div class="coming-note">Alpha 0.3 instalável homologada apenas em VM · Sem ISO pública · Sem data de lançamento</div>
         </div>
       </div>
     </section>
@@ -271,6 +300,7 @@
         <a href="#visao">Visão</a>
         <a href="#jarvis">Jarvis</a>
         <a href="#roadmap">Roadmap</a>
+        <a href="#atualizacoes">Atualizações</a>
         <a href="https://github.com/silviodarko">GitHub</a>
       </div>
     </div>

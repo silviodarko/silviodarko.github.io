@@ -15,7 +15,15 @@ https://silviodarko.github.io/
 
 - [Roadmap público](https://github.com/silviodarko/silviodarko/blob/main/SILVOS_ROADMAP.md)
 - [Perfil e portfólio técnico](https://github.com/silviodarko)
-- Status: **Alpha 0.1 Live homologada em QEMU UEFI** (uso experimental privado), ainda sem ISO pública, instalador ou previsão confirmada de lançamento.
+- Status: **Alpha 0.3 instalável homologada em QEMU UEFI** (disco qcow2 descartável, Niri, Noctalia, rede, silvos-cli e SHA-256 do disco sentinela). Ainda sem ISO pública, instalador certificado para hardware real ou data anunciada.
+
+### Próximo marco: silvos update
+
+- `silvos-cli` empacotado e exercitado em contêiner Arch descartável.
+- Assinatura GPG **temporária** testada em repositório experimental, sem chave de release.
+- `silvos update --check` funciona em laboratório, consultando somente a base local.
+- `silvos update` permanece **bloqueado** até validar repositório assinado, upgrade N → N+1 e recuperação em VM.
+- Terminal exibido no site é **prévia conceitual**, não comando executado.
 
 ### Tecnologias da landing page
 

@@ -251,3 +251,35 @@ box-shadow:0 0 145px 20px rgba(91,173,171,.12),inset 0 0 90px rgba(114,197,196,.
 .alpha-proof .proof-icon{width:31px;height:31px;flex:none;border-radius:11px;display:grid;place-items:center;background:rgba(130,215,255,.12);border:1px solid rgba(195,244,255,.25);color:#aeefff;font-size:17px}
 @supports not ((backdrop-filter: blur(2px)) or (-webkit-backdrop-filter: blur(2px))){.glass{background:rgba(17,41,65,.96)}.site-header.scrolled{background:rgba(8,24,42,.98)}}
 @media (prefers-reduced-transparency:reduce){.glass{background:rgba(15,39,64,.96);backdrop-filter:none;-webkit-backdrop-filter:none}}
+
+/* SilvOS Alpha 0.3: updater milestone, no production execution. */
+.desktop-nav{gap:22px}
+.updates-section{overflow:hidden;background:radial-gradient(ellipse at 75% 40%,rgba(62,149,213,.1),transparent 60%)}
+.updates-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.03fr);align-items:center;gap:6%}
+.updates-copy h2{font-size:clamp(37px,4.6vw,60px);line-height:1.08;letter-spacing:-.065em;margin:16px 0 20px}
+.updates-copy h2 strong{color:var(--ice)}
+.updates-copy>p{color:var(--muted);font-size:15px;line-height:1.78}
+.updates-milestones{display:grid;gap:17px;margin:29px 0}
+.updates-milestone{display:flex;align-items:flex-start;gap:14px}
+.milestone-dot{display:grid;place-items:center;flex:none;width:36px;height:36px;border-radius:12px;background:rgba(117,174,228,.08);border:1px solid rgba(166,225,255,.25);font-size:12px;font-weight:750;color:var(--ice)}
+.milestone-dot.done{color:#a6f0db;background:rgba(94,185,163,.1);border-color:rgba(147,230,201,.27)}
+.updates-milestone strong{display:block;font-size:14px;line-height:1.45;margin-bottom:4px}
+.updates-milestone small{display:block;color:var(--muted);font-size:12px;line-height:1.55}
+.updater-console{border-radius:26px;overflow:hidden}
+.updater-console-head,.updater-console-bottom{display:flex;align-items:center;gap:14px;padding:17px 22px;background:rgba(5,15,27,.52);font-size:11px;letter-spacing:.1em;font-weight:750;color:#c7e6e8}
+.updater-console-head{border-bottom:1px solid var(--line)}
+.console-lights{display:flex;gap:6px}.console-lights i{width:8px;height:8px;border-radius:50%;background:#86b9c4}.console-lights i:nth-child(2){background:#8cdcca}.console-lights i:nth-child(3){background:#b2d4f6}
+.console-preview{margin-left:auto;font-size:9px;color:#82bed0}
+.updater-console-body{min-height:300px;padding:34px 27px;font:500 13px/1.75 ui-monospace,SFMono-Regular,Consolas,monospace}
+.updater-console-body p{margin:0 0 9px;overflow-wrap:anywhere}
+.console-comment{font-size:11px;color:#699eaf;margin-bottom:28px!important}
+.console-prompt{color:#95eacb;margin-right:10px}
+.console-text{color:#9abac7;font-size:12px;padding-left:25px}
+.console-warning{color:#ffd19c;padding-left:25px}
+.console-gap{margin-top:28px!important}
+.updater-console-bottom{border-top:1px solid var(--line);font-size:10px;color:#aad7dd}
+.updater-console-bottom>span:last-child{margin-left:auto;font-weight:500;letter-spacing:0;color:#93aab8}
+.console-signal{width:7px;height:7px;border-radius:50%;background:#9beed0;box-shadow:0 0 14px rgba(155,238,208,.4)}
+@media(max-width:1100px){.desktop-nav{gap:15px}}
+@media(max-width:850px){.updates-layout{grid-template-columns:1fr;gap:38px}}
+@media(max-width:560px){.updater-console-head{padding:15px;gap:9px}.updater-console-body{min-height:auto;padding:23px 18px;font-size:12px}.updater-console-bottom{padding:14px;flex-wrap:wrap}.updater-console-bottom>span:last-child{margin:0;width:100%}}
