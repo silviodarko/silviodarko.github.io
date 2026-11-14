@@ -4,23 +4,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
-  <meta name="theme-color" content="#07121f">
-  <meta name="description" content="Conheça o SilvOS: uma experiência Linux independente em desenvolvimento, com desktop Liquid Glass, inteligência artificial local Jarvis e automação voltada à privacidade.">
+  <meta name="theme-color" content="#080b19">
+  <meta name="description" content="Conheça o SilvOS: uma experiência Linux independente em desenvolvimento, com desktop Liquid Glass, inteligência artificial local Unity e automação voltada à privacidade.">
   <meta name="author" content="SilvOS">
   <meta name="robots" content="index,follow">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:site_name" content="SilvOS">
   <meta property="og:title" content="SilvOS | Your system. Your rules.">
-  <meta property="og:description" content="Linux com Liquid Glass e IA local. A Alpha 0.3 foi instalada em disco virtual e iniciou em QEMU UEFI sem ISO. Próximo marco: silvos update; ainda sem download público.">
+  <meta property="og:description" content="A identidade Aurora Glass do SilvOS: Linux, Niri/Noctalia e interface Unity em laboratório. Alpha 0.3 validada em VM; sem download público.">
   <meta property="og:url" content="https://silviodarko.github.io/">
   <meta property="og:image" content="https://silviodarko.github.io/social-preview.svg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="SilvOS | Your system. Your rules.">
-  <meta name="twitter:description" content="Liquid Glass, Linux e IA local. Alpha 0.3 instalável validada em VM; próximo passo silvos update.">
+  <meta name="twitter:description" content="Aurora Glass, Linux e o conceito Unity. Alpha 0.3 validada em VM, sem lançamento público.">
   <link rel="canonical" href="https://silviodarko.github.io/">
   <link rel="icon" type="image/svg+xml" href="./favicon.svg">
   <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./aurora.css">
   <title>SilvOS | Your system. Your rules.</title>
   <script defer src="./app.js"></script>
   <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
@@ -39,7 +40,7 @@
       <nav class="desktop-nav" aria-label="Navegação principal">
         <a href="#visao">Visão</a>
         <a href="#experiencia">Experiência</a>
-        <a href="#jarvis">Jarvis</a>
+        <a href="#unity">Unity</a>
         <a href="#roadmap">Roadmap</a>
         <a href="#atualizacoes">Atualizações</a>
         <a href="#lancamento">Lançamento</a>
@@ -58,7 +59,7 @@
     <nav class="mobile-nav" id="mobile-nav" aria-label="Navegação móvel" inert>
       <a href="#visao">Visão</a>
       <a href="#experiencia">Experiência</a>
-      <a href="#jarvis">Jarvis</a>
+      <a href="#unity">Unity</a>
       <a href="#roadmap">Roadmap</a>
         <a href="#atualizacoes">Atualizações</a>
       <a href="#lancamento">Lançamento</a>
@@ -69,10 +70,10 @@
     <section class="hero" id="inicio" aria-labelledby="hero-heading">
       <div class="container hero-layout">
         <div class="hero-copy">
-          <span class="eyebrow"><span class="pulse" aria-hidden="true"></span> Independent Linux project · In development</span>
+          <span class="eyebrow"><span class="pulse" aria-hidden="true"></span> SILVOS / EST. 2026 / LABORATÓRIO EM EVOLUÇÃO</span>
           <h1 id="hero-heading">Silv<span>OS</span></h1>
-          <p class="hero-tag">Your system.<br>Your rules.</p>
-          <p class="hero-description">Uma nova visão de desktop Linux. Design que flui, inteligência artificial que pode funcionar localmente e ferramentas feitas para colocar o controle de volta nas suas mãos.</p>
+          <p class="hero-tag"><span>Seu sistema.</span><br>Suas regras.</p>
+          <p class="hero-description">Linux independente com identidade própria: camadas de vidro, interface espacial e um assistente local em evolução. Um laboratório real de liberdade, fluidez e controle.</p>
           <div class="cta-row">
             <a href="#experiencia" class="btn btn-primary">Descubra o SilvOS <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
             <a href="#roadmap" class="btn btn-secondary">Acompanhe a evolução</a>
@@ -86,7 +87,7 @@
             <span><strong>Alpha 0.3 · Instalação e boot UEFI pelo disco homologados</strong><small>UEFI sem ISO · Niri · Noctalia · Rede · silvos-cli · disco sentinela íntegro | VM privada</small></span>
           </div>
         </div>
-        <div class="hero-art" aria-hidden="true">
+        <div class="hero-art" role="img" aria-label="Conceito visual da interface Unity com núcleo de luz e painel Glass. Sem telemetria em tempo real.">
           <div class="orb">
             <div class="orbit"></div>
             <div class="orbit two"></div>
@@ -94,6 +95,13 @@
           </div>
           <div class="float-tag tag-left">✦ &nbsp;Liquid <em>Glass</em></div>
           <div class="float-tag tag-right">Linux · <em>Local AI</em></div>
+          <div class="hero-hud glass" aria-hidden="true">
+            <div class="hud-top"><span class="hud-signal"></span><span>UNITY / INTERFACE</span><small>VISUAL CONCEPT</small></div>
+            <div class="hud-title"><span>O sistema tem<br><strong>presença.</strong></span><span class="hud-pulse">◎</span></div>
+            <div class="hud-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="hud-bottom"><span>LOCAL FIRST</span><span>GLASS / WAYLAND</span></div>
+          </div>
+          <div class="orbit-caption" aria-hidden="true">01 / 03 &nbsp; • &nbsp; EXPERIENCE PREVIEW</div>
         </div>
       </div>
     </section>
@@ -169,26 +177,26 @@
       </div>
     </section>
 
-    <section class="section jarvis-section" id="jarvis" aria-labelledby="jarvis-heading">
+    <section class="section jarvis-section" id="unity" aria-labelledby="jarvis-heading">
       <div class="container jarvis-grid">
         <div class="jarvis-copy reveal">
           <div class="section-head">
             <span class="kicker">Inteligência local</span>
-            <h2 id="jarvis-heading">Conheça o <strong>Jarvis.</strong></h2>
-            <p>Uma camada de assistência projetada para conversar, entender comandos de voz e executar operações que o usuário autorizou. Mais presença no desktop, menos dependência de serviços externos.</p>
+            <h2 id="jarvis-heading">Conheça o <strong>Unity.</strong></h2>
+            <p>Uma interface única em desenvolvimento que reúne o legado do Jarvis, Garimpeiro e assistente Niri. Conversa local, voz sob comando e ações autorizadas, com validação gradual no desktop.</p>
           </div>
           <ul class="bullet-list">
-            <li>Reconhecimento de voz com Whisper e experimentos de desempenho.</li>
+            <li>Reconhecimento de voz experimental com Whisper, sempre por ação explícita.</li>
             <li>Inferência local com Qwen3 e llama.cpp.</li>
-            <li>Voz local com Piper e Kokoro em evolução; integração com Zapzap ainda em validação.</li>
+            <li>Síntese local com Piper em testes; integrações de áudio e aplicativos seguem em validação.</li>
             <li>Integração com o desktop por ações limitadas, verificações e rollback.</li>
           </ul>
           <a href="#roadmap" class="btn btn-secondary">Ver próximos marcos <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
         </div>
-        <div class="demo glass reveal" aria-label="Demonstração conceitual da interface do Jarvis. Não é uma conversa real.">
+        <div class="demo glass reveal" aria-label="Demonstração conceitual da interface do Unity. Não é uma conversa real.">
           <div class="demo-top">
             <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
-            <span>SILVOS / JARVIS</span>
+            <span>SILVOS / UNITY</span>
             <span class="demo-label"><i aria-hidden="true"></i> UI CONCEPT</span>
           </div>
           <span class="demo-stamp">DESIGN PREVIEW</span>
@@ -197,10 +205,10 @@
               <div class="demo-mark" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4"><circle cx="12" cy="12" r="3.5"/><path d="M4 12a8 8 0 0 1 8-8M20 12a8 8 0 0 1-8 8M12 1v3M12 20v3M1 12h3M20 12h3"/></svg>
               </div>
-              <div><h3>Jarvis Assistant</h3><small>Local-first intelligence · Em evolução</small></div>
+              <div><h3>Unity Assistant</h3><small>Local-first intelligence · Em evolução</small></div>
             </div>
             <div class="demo-thread">
-              <div class="message user"><b>Exemplo de comando</b>Jarvis, o que podemos fazer no SilvOS?</div>
+              <div class="message user"><b>Exemplo de comando</b>Unity, o que podemos fazer no SilvOS?</div>
               <div class="message assistant"><b>Exemplo de resposta</b>Organizar o ambiente, consultar informações locais e executar ações previamente autorizadas. Você continua no controle.</div>
             </div>
           </div>
@@ -298,7 +306,7 @@
       </div>
       <div class="footer-links">
         <a href="#visao">Visão</a>
-        <a href="#jarvis">Jarvis</a>
+        <a href="#unity">Unity</a>
         <a href="#roadmap">Roadmap</a>
         <a href="#atualizacoes">Atualizações</a>
         <a href="https://github.com/silviodarko">GitHub</a>
