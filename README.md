@@ -5,7 +5,7 @@
 
 **Your system. Your rules.**
 
-Site público do **SilvOS**, um projeto independente de Linux com identidade Liquid Glass, IA local **Jarvis** e foco em privacidade, transparência e controle do usuário.
+Site público do **SilvOS**, um projeto independente de Linux com identidade Aurora Glass, assistente local **Unity** em validação e foco em privacidade, transparência e controle do usuário.
 
 ### Website
 
@@ -42,3 +42,7 @@ Para editar a página, altere `index.html`, `styles.css`, `app.js` ou os arquivo
 ---
 
 Built in Brazil · Independent Linux project.
+
+### Aurora Glass · nova identidade visual (proposta em revisão)
+
+A página ganhou uma camada CSS modular `aurora.css`, com azul-gelo/violeta, núcleo orbital, painel Unity conceitual e layout responsivo. Não há fontes remotas, rastreadores nem consulta de dados pessoais. O HUD da homepage é ilustrativo, sem conexão com o desktop ou telemetria real. Mantidos os rótulos de Alpha/VM e a ausência de download público.
