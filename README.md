@@ -13,6 +13,9 @@ Site institucional de um projeto Linux independente, em pré-lançamento. Aprese
 - `renascimento.css`: identidade visual responsiva compartilhada.
 - `renascimento-social.svg`: imagem conceitual de compartilhamento.
 - `favicon.svg`: identidade existente preservada.
+- `brand.html` e `brand/*.svg`: estúdio de marcas conceituais; sete símbolos vetoriais locais.
+
+O FAQ esclarece disponibilidade, hardware, permissões e licenciamento. A âncora histórica `#jarvis` continua apontando para a seção UNITY.
 
 HTML e CSS locais, sem JavaScript ativo, fontes externas, analytics, formulários, cookies ou chamadas ao gateway. A esfera é uma ilustração CSS, não captura do produto nem assistente conectado. Os arquivos anteriores permanecem para revisão e recuperação.
 
