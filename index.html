@@ -1,309 +1,39 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="dark">
-  <meta name="theme-color" content="#07121f">
-  <meta name="description" content="Conheça o SilvOS: uma experiência Linux independente em desenvolvimento, com desktop Liquid Glass, inteligência artificial local Jarvis e automação voltada à privacidade.">
-  <meta name="author" content="SilvOS">
-  <meta name="robots" content="index,follow">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="pt_BR">
-  <meta property="og:site_name" content="SilvOS">
-  <meta property="og:title" content="SilvOS | Your system. Your rules.">
-  <meta property="og:description" content="Linux com Liquid Glass e IA local. A Alpha 0.3 foi instalada em disco virtual e iniciou em QEMU UEFI sem ISO. Próximo marco: silvos update; ainda sem download público.">
-  <meta property="og:url" content="https://silviodarko.github.io/">
-  <meta property="og:image" content="https://silviodarko.github.io/social-preview.svg">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="SilvOS | Your system. Your rules.">
-  <meta name="twitter:description" content="Liquid Glass, Linux e IA local. Alpha 0.3 instalável validada em VM; próximo passo silvos update.">
-  <link rel="canonical" href="https://silviodarko.github.io/">
-  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
-  <link rel="stylesheet" href="./styles.css">
-  <title>SilvOS | Your system. Your rules.</title>
-  <script defer src="./app.js"></script>
-  <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark"><meta name="theme-color" content="#090d19">
+<meta name="description" content="SilvOS: Linux independente, experiência Aurora Glass, inteligência local e engenharia responsável. Em desenvolvimento.">
+<meta property="og:title" content="SilvOS | Your system. Your rules."><meta property="og:description" content="Conheça a próxima geração do SilvOS. Pré-lançamento, sem ISO pública."><meta property="og:type" content="website"><meta property="og:url" content="https://silviodarko.github.io/"><meta property="og:image" content="https://silviodarko.github.io/renascimento-social.svg"><meta name="twitter:card" content="summary_large_image"><link rel="canonical" href="https://silviodarko.github.io/">
+<link rel="icon" href="./favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="./renascimento.css"><title>SilvOS | Your system. Your rules.</title>
 </head>
 <body>
-  <a class="skip-link" href="#conteudo">Pular para conteúdo</a>
-  <div class="utility-line" aria-hidden="true"></div>
-
-  <header class="site-header" id="site-header">
-    <div class="container header-content">
-      <a class="brand" href="#inicio" aria-label="SilvOS, voltar ao início">
-        <img src="./favicon.svg" width="41" height="41" alt="">
-        <b>Silv<span>OS</span></b>
-      </a>
-
-      <nav class="desktop-nav" aria-label="Navegação principal">
-        <a href="#visao">Visão</a>
-        <a href="#experiencia">Experiência</a>
-        <a href="#jarvis">Jarvis</a>
-        <a href="#roadmap">Roadmap</a>
-        <a href="#atualizacoes">Atualizações</a>
-        <a href="#lancamento">Lançamento</a>
-      </nav>
-
-      <div class="header-actions">
-        <a class="github-link" href="https://github.com/silviodarko" target="_blank" rel="noopener noreferrer" aria-label="Acompanhe o projeto no GitHub, abre nova aba">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .6A11.4 11.4 0 0 0 8.4 22.82c.57.1.78-.25.78-.55v-2.13c-3.19.7-3.87-1.35-3.87-1.35-.53-1.33-1.29-1.68-1.29-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.72 1.25 3.39.96.1-.74.41-1.25.74-1.54-2.55-.29-5.23-1.27-5.23-5.63 0-1.25.45-2.26 1.18-3.05-.12-.29-.51-1.45.11-3.01 0 0 .96-.31 3.14 1.17A10.9 10.9 0 0 1 12 5.23c.97 0 1.95.13 2.87.39 2.18-1.48 3.13-1.17 3.13-1.17.62 1.56.23 2.72.11 3.01.74.79 1.18 1.8 1.18 3.05 0 4.38-2.68 5.34-5.24 5.62.42.37.79 1.09.79 2.2v3.94c0 .3.21.65.8.54A11.4 11.4 0 0 0 12 .6Z"/></svg>
-          <span>GitHub</span>
-        </a>
-        <button type="button" class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-controls="mobile-nav" aria-expanded="false">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.7" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-        </button>
-      </div>
-    </div>
-    <nav class="mobile-nav" id="mobile-nav" aria-label="Navegação móvel" inert>
-      <a href="#visao">Visão</a>
-      <a href="#experiencia">Experiência</a>
-      <a href="#jarvis">Jarvis</a>
-      <a href="#roadmap">Roadmap</a>
-        <a href="#atualizacoes">Atualizações</a>
-      <a href="#lancamento">Lançamento</a>
-    </nav>
-  </header>
-
-  <main id="conteudo">
-    <section class="hero" id="inicio" aria-labelledby="hero-heading">
-      <div class="container hero-layout">
-        <div class="hero-copy">
-          <span class="eyebrow"><span class="pulse" aria-hidden="true"></span> Independent Linux project · In development</span>
-          <h1 id="hero-heading">Silv<span>OS</span></h1>
-          <p class="hero-tag">Your system.<br>Your rules.</p>
-          <p class="hero-description">Uma nova visão de desktop Linux. Design que flui, inteligência artificial que pode funcionar localmente e ferramentas feitas para colocar o controle de volta nas suas mãos.</p>
-          <div class="cta-row">
-            <a href="#experiencia" class="btn btn-primary">Descubra o SilvOS <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
-            <a href="#roadmap" class="btn btn-secondary">Acompanhe a evolução</a>
-          </div>
-          <p class="hero-footnote">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20ZM12 7v5l3 2"/></svg>
-            Alpha 0.3 instalável validada em QEMU UEFI · Sem ISO pública ou data de lançamento
-          </p>
-          <div class="alpha-proof glass" aria-label="Status experimental da distribuição">
-            <span class="proof-icon" aria-hidden="true">✓</span>
-            <span><strong>Alpha 0.3 · Instalação e boot UEFI pelo disco homologados</strong><small>UEFI sem ISO · Niri · Noctalia · Rede · silvos-cli · disco sentinela íntegro | VM privada</small></span>
-          </div>
-        </div>
-        <div class="hero-art" aria-hidden="true">
-          <div class="orb">
-            <div class="orbit"></div>
-            <div class="orbit two"></div>
-            <div class="orb-glass"><span class="orb-letter">S</span></div>
-          </div>
-          <div class="float-tag tag-left">✦ &nbsp;Liquid <em>Glass</em></div>
-          <div class="float-tag tag-right">Linux · <em>Local AI</em></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="visao" aria-labelledby="vision-heading">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="kicker">A visão</span>
-          <h2 id="vision-heading">Tecnologia que se adapta <strong>a você.</strong></h2>
-          <p>Um sistema operacional não precisa escolher entre liberdade, personalidade e praticidade. O SilvOS nasce de um ambiente real de trabalho, transformado em laboratório de engenharia e experiência de uso.</p>
-        </div>
-        <div class="metrics-strip">
-          <article class="metric glass reveal">
-            <div class="metric-icon" aria-hidden="true">◇</div>
-            <h3>Linux independente</h3>
-            <p>Base Arch Linux, componentes configuráveis e uma abordagem modular para desktop e ferramentas.</p>
-          </article>
-          <article class="metric glass reveal">
-            <div class="metric-icon" aria-hidden="true">✦</div>
-            <h3>Design com propósito</h3>
-            <p>Transparência, profundidade, consistência e interface visual integrada ao fluxo de trabalho.</p>
-          </article>
-          <article class="metric glass reveal">
-            <div class="metric-icon" aria-hidden="true">◎</div>
-            <h3>Privacidade por princípio</h3>
-            <p>Foco em processamento local e ações explícitas. Sem necessidade de expor conversas a uma página pública.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="experiencia" aria-labelledby="experience-heading">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="kicker">A experiência</span>
-          <h2 id="experience-heading">Feito para quem quer <strong>mais do sistema.</strong></h2>
-          <p>O SilvOS explora uma identidade visual própria enquanto desenvolve as fundações de um desktop estável e atualizável.</p>
-        </div>
-        <div class="features">
-          <article class="feature glass reveal">
-            <div class="feature-symbol" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18M9 9v11"/></svg>
-            </div>
-            <h3>Desktop Liquid Glass</h3>
-            <p>Um ambiente Wayland com Niri/Lniri, Noctalia e transparências em camadas. Luz, profundidade e movimento com intenção.</p>
-          </article>
-          <article class="feature glass reveal">
-            <div class="feature-symbol" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M4 7h16M4 12h10M4 17h16"/><circle cx="18" cy="12" r="2"/></svg>
-            </div>
-            <h3>Produtividade integrada</h3>
-            <p>Terminal, janelas, atalhos, mídia e ferramentas conectados à experiência desktop, com liberdade para personalização.</p>
-          </article>
-          <article class="feature glass reveal">
-            <div class="feature-symbol" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 3 3 8l9 5 9-5-9-5ZM3 12l9 5 9-5M3 16l9 5 9-5"/></svg>
-            </div>
-            <h3>Engenharia reproduzível</h3>
-            <p>Testes, empacotamento, assinaturas e recuperação. ISO instalável testada em VM. Próxima etapa: pacotes próprios assinados e atualizações recuperáveis.</p>
-          </article>
-        </div>
-        <div class="tech-stack reveal" aria-label="Tecnologias do projeto">
-          <span class="tech-pill">Arch Linux</span>
-          <span class="tech-pill">Wayland</span>
-          <span class="tech-pill">Niri / Lniri</span>
-          <span class="tech-pill">Noctalia</span>
-          <span class="tech-pill">Python</span>
-          <span class="tech-pill">Bash</span>
-          <span class="tech-pill">Qt / QML</span>
-          <span class="tech-pill">GitHub Actions</span>
-          <span class="tech-pill">systemd</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="section jarvis-section" id="jarvis" aria-labelledby="jarvis-heading">
-      <div class="container jarvis-grid">
-        <div class="jarvis-copy reveal">
-          <div class="section-head">
-            <span class="kicker">Inteligência local</span>
-            <h2 id="jarvis-heading">Conheça o <strong>Jarvis.</strong></h2>
-            <p>Uma camada de assistência projetada para conversar, entender comandos de voz e executar operações que o usuário autorizou. Mais presença no desktop, menos dependência de serviços externos.</p>
-          </div>
-          <ul class="bullet-list">
-            <li>Reconhecimento de voz com Whisper e experimentos de desempenho.</li>
-            <li>Inferência local com Qwen3 e llama.cpp.</li>
-            <li>Voz local com Piper e Kokoro em evolução; integração com Zapzap ainda em validação.</li>
-            <li>Integração com o desktop por ações limitadas, verificações e rollback.</li>
-          </ul>
-          <a href="#roadmap" class="btn btn-secondary">Ver próximos marcos <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
-        </div>
-        <div class="demo glass reveal" aria-label="Demonstração conceitual da interface do Jarvis. Não é uma conversa real.">
-          <div class="demo-top">
-            <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
-            <span>SILVOS / JARVIS</span>
-            <span class="demo-label"><i aria-hidden="true"></i> UI CONCEPT</span>
-          </div>
-          <span class="demo-stamp">DESIGN PREVIEW</span>
-          <div class="demo-main">
-            <div class="demo-title">
-              <div class="demo-mark" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4"><circle cx="12" cy="12" r="3.5"/><path d="M4 12a8 8 0 0 1 8-8M20 12a8 8 0 0 1-8 8M12 1v3M12 20v3M1 12h3M20 12h3"/></svg>
-              </div>
-              <div><h3>Jarvis Assistant</h3><small>Local-first intelligence · Em evolução</small></div>
-            </div>
-            <div class="demo-thread">
-              <div class="message user"><b>Exemplo de comando</b>Jarvis, o que podemos fazer no SilvOS?</div>
-              <div class="message assistant"><b>Exemplo de resposta</b>Organizar o ambiente, consultar informações locais e executar ações previamente autorizadas. Você continua no controle.</div>
-            </div>
-          </div>
-          <div class="demo-bottom">
-            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 3 4 7v5c0 5 3.2 8 8 9 4.8-1 8-4 8-9V7l-8-4Z"/><path d="m9 12 2 2 4-4"/></svg>Autorização explícita</span>
-            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="4"/><path d="M9 7h6M9 12h6M9 17h3"/></svg>Conceito visual · Não conectado</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="roadmap" aria-labelledby="roadmap-heading">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="kicker">Do protótipo ao produto</span>
-          <h2 id="roadmap-heading">Uma evolução <strong>sem atalhos.</strong></h2>
-          <p>O roadmap público separa o que já experimentamos das entregas que ainda exigem engenharia e validação real. Transparência antes do hype.</p>
-        </div>
-        <div class="roadmap-grid">
-          <article class="phase glass reveal">
-            <div class="phase-top"><span class="phase-num">FASE 00</span><span class="phase-badge">Em uso pessoal</span></div>
-            <h3>Workstation prototype</h3>
-            <p>O SilvOS existe hoje como ambiente experimental personalizado, em uso e aprimoramento contínuo.</p>
-            <ul><li>Desktop Arch + Wayland</li><li>Personalizações Liquid Glass</li><li>Protótipos de Jarvis e Ponte</li></ul>
-          </article>
-          <article class="phase glass reveal">
-            <div class="phase-top"><span class="phase-num">FASE C</span><span class="phase-badge future">Atualizador em construção</span></div>
-            <h3>Pacotes e atualizações</h3>
-            <p>Evolução para pacotes próprios, atualização controlada, validação isolada, assinatura e mecanismos de recuperação.</p>
-            <ul><li>PKGBUILD e testes de build</li><li>silvos update --check (protótipo)</li><li>Upgrade N → N+1, chave de release e rollback pendentes</li></ul>
-          </article>
-          <article class="phase glass reveal">
-            <div class="phase-top"><span class="phase-num">FASE D</span><span class="phase-badge">Alpha 0.3 validada em VM</span></div>
-            <h3>ISO instalável Alpha 0.3</h3>
-            <p>O laboratório privado aprovou a instalação em qcow2, a inicialização UEFI sem a mídia e as verificações de Niri, Noctalia, rede, CLI e disco sentinela.</p>
-            <ul><li>Instalação em disco virtual e boot sem ISO</li><li>SHA-256 do segundo disco preservado</li><li>Instalador para hardware físico e publicação pendentes</li></ul>
-          </article>
-        </div>
-        <div class="roadmap-more reveal">
-          <a href="https://github.com/silviodarko/silviodarko/blob/main/SILVOS_ROADMAP.md" target="_blank" rel="noopener noreferrer">Explorar o roadmap detalhado <span aria-hidden="true">↗</span></a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section updates-section" id="atualizacoes" aria-labelledby="updates-heading">
-      <div class="container updates-layout">
-        <div class="updates-copy reveal">
-          <span class="kicker">Próximo marco · Fase C</span>
-          <h2 id="updates-heading">O futuro do SilvOS cabe <strong>em um comando.</strong></h2>
-          <p>Instalar foi a primeira conquista. Agora estamos construindo a capacidade de evoluir: pacotes versionados, assinados, testados e atualizáveis sem perder a identidade Glass.</p>
-          <div class="updates-milestones">
-            <div class="updates-milestone"><span class="milestone-dot done">✓</span><div><strong>Alpha 0.3 instalada em VM</strong><small>UEFI sem ISO, Niri, Noctalia, rede, CLI e disco sentinela verificados</small></div></div>
-            <div class="updates-milestone"><span class="milestone-dot done">✓</span><div><strong>Pacote e assinatura testados</strong><small>silvos-cli e repositório GPG efêmero no CI isolado</small></div></div>
-            <div class="updates-milestone"><span class="milestone-dot">03</span><div><strong>Próximo: atualização N → N+1</strong><small>Repositório testing e recuperação em máquina virtual</small></div></div>
-          </div>
-          <a href="#roadmap" class="btn btn-secondary">Conhecer a evolução <span aria-hidden="true">↗</span></a>
-        </div>
-        <div class="updater-console glass reveal" aria-label="Prévia ilustrativa do atualizador, não disponível para uso real">
-          <div class="updater-console-head"><span class="console-lights" aria-hidden="true"><i></i><i></i><i></i></span><span>silvos / update</span><span class="console-preview">LAB PREVIEW</span></div>
-          <div class="updater-console-body">
-            <p class="console-comment"># Demonstração conceitual, não é execução real</p>
-            <p><span class="console-prompt">❯</span> silvos update --check</p>
-            <p class="console-text">Consulta à base local disponível no protótipo</p>
-            <p class="console-gap"><span class="console-prompt">❯</span> silvos update</p>
-            <p class="console-warning">Atualização bloqueada por segurança</p>
-            <p class="console-text">Aguardando repositório de release, upgrade e rollback testados em VM.</p>
-          </div>
-          <div class="updater-console-bottom"><span class="console-signal"></span> TESTING ONLY <span>Sem alterações no desktop</span></div>
-        </div>
-      </div>
-    </section>
-    <section class="coming-section" id="lancamento" aria-labelledby="launch-heading">
-      <div class="container">
-        <div class="coming-card glass reveal">
-          <span class="kicker">O próximo capítulo está sendo escrito</span>
-          <h2 id="launch-heading">Built for tomorrow.<br>Designed for you.</h2>
-          <p>A Alpha 0.3 já passou nos testes de instalação em disco virtual e boot UEFI sem a ISO. Agora o foco é um repositório assinado, atualizações N → N+1 em VM e recuperação. Ainda não há instalador homologado para hardware real ou lançamento público.</p>
-          <div class="coming-actions">
-            <a href="https://github.com/silviodarko" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Acompanhar no GitHub <span aria-hidden="true">↗</span></a>
-            <a href="https://github.com/silviodarko/silviodarko/blob/main/SILVOS_ROADMAP.md" class="btn btn-secondary">Roadmap público</a>
-          </div>
-          <div class="coming-note">Alpha 0.3 instalável homologada apenas em VM · Sem ISO pública · Sem data de lançamento</div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-layout">
-      <div>
-        <a class="brand" href="#inicio"><img src="./favicon.svg" width="32" height="32" alt=""><b>Silv<span>OS</span></b></a>
-        <p>© <span id="year">2026</span> SilvOS · Projeto independente desenvolvido no Brasil.</p>
-        <p>Participação individual no <a href="https://github.com/developer" target="_blank" rel="noopener noreferrer">GitHub Developer Program</a>, com foco em integrações pela API do GitHub. Não constitui parceria ou endosso oficial.</p>
-        <p>Sem associação ou endosso oficial de Arch Linux, GitHub ou fabricantes citados.</p>
-      </div>
-      <div class="footer-links">
-        <a href="#visao">Visão</a>
-        <a href="#jarvis">Jarvis</a>
-        <a href="#roadmap">Roadmap</a>
-        <a href="#atualizacoes">Atualizações</a>
-        <a href="https://github.com/silviodarko">GitHub</a>
-      </div>
-    </div>
-  </footer>
-</body>
-</html>
+<a class="skip" href="#conteudo">Pular para conteúdo</a>
+<header class="shell nav"><a class="brand" href="#inicio"><img src="./favicon.svg" alt="" width="36" height="36">Silv<span>OS</span></a><nav aria-label="Navegação principal"><a href="#visao">Visão</a><a href="#ecossistema">Ecossistema</a><a href="#roadmap">Roadmap</a><a href="https://github.com/silviodarko">GitHub ↗</a></nav></header>
+<main id="conteudo">
+<section class="shell hero" id="inicio">
+<div><p class="eyebrow"><span class="dot"></span> PROJETO INDEPENDENTE · PRÉ-LANÇAMENTO</p><h1>Seu sistema.<br><span>Suas regras.</span></h1><p class="lead">Um Linux que coloca a experiência, a inteligência local e o controle do usuário no mesmo lugar.</p><p class="muted">Construído no Brasil. Base Arch Linux, desktop Wayland e uma nova geração de ferramentas pessoais em desenvolvimento.</p><div class="actions"><a class="primary" href="#ecossistema">Conheça o ecossistema</a><a class="secondary" href="#roadmap">Acompanhe o progresso</a></div><p class="small">Ainda sem ISO pública ou promessa de compatibilidade universal.</p></div>
+<div class="hero-art" role="img" aria-label="Ilustração conceitual de uma esfera Aurora Glass, não uma captura do produto"><div class="orb"><div class="orbit o1"></div><div class="orbit o2"></div><div class="orbit o3"></div><div class="core"></div></div><div class="art-label"><span class="dot"></span> UNITY / AURORA<span>ESTUDO VISUAL</span></div></div>
+</section>
+<section class="shell strip" aria-label="Princípios"><div><strong>Local-first</strong><span>Privacidade por projeto</span></div><div><strong>Linux</strong><span>Base Arch e Wayland</span></div><div><strong>Verificável</strong><span>Testes e recuperação</span></div></section>
+<section class="shell section" id="visao"><p class="eyebrow">01 / VISÃO</p><h2>Inteligência com controle.</h2><p class="intro">Um desktop não precisa escolher entre beleza, autonomia e transparência. O SilvOS explora uma experiência integrada, sem tratar automação como permissão irrestrita.</p><div class="grid three"><article><span class="number">01</span><h3>Experiência própria</h3><p>Niri, Noctalia e uma linguagem visual de vidro, pensada para o cotidiano.</p></article><article><span class="number">02</span><h3>IA sob demanda</h3><p>Modelos locais e ferramentas delimitadas, com respeito à disponibilidade de recursos.</p></article><article><span class="number">03</span><h3>Engenharia responsável</h3><p>Alterações verificadas, autorizações explícitas e recuperação como parte do projeto.</p></article></div></section>
+<section class="shell section" id="ecossistema"><p class="eyebrow">02 / ECOSSISTEMA</p><h2>Uma arquitetura. Várias capacidades.</h2><p class="intro">Os componentes abaixo estão em estágios diferentes. Uma funcionalidade em laboratório não equivale a uma versão pública.</p>
+<div class="grid two">
+<article class="feature aurora" id="unity"><p class="tag">EM INTEGRAÇÃO</p><h3>UNITY Aurora</h3><p>Assistente local, conversação, memória, voz e ferramentas autorizadas, com interface Aurora Glass. A instalação e homologação final do desktop estão em andamento.</p><div class="feature-bottom">Inteligência pessoal <span>01</span></div></article>
+<article class="feature vulcano"><p class="tag">CANDIDATA EM LABORATÓRIO</p><h3>VULCANO</h3><p>Infraestrutura experimental para executar tarefas de engenharia autorizadas, testar alterações e conservar recibos verificáveis. A produção contínua real ainda não está homologada.</p><div class="feature-bottom">Engenharia de software <span>02</span></div></article>
+<article><p class="tag">EM DESENVOLVIMENTO</p><h3>Mnemosyne</h3><p>Memória persistente e recuperação seletiva de contexto para ferramentas do ecossistema.</p></article>
+<article><p class="tag">EM VALIDAÇÃO</p><h3>NEXUS</h3><p>Comunicação operacional com escopo delimitado e resultados verificáveis.</p></article>
+<article><p class="tag">ALPHA EXPERIMENTAL</p><h3>UNITY Mobile</h3><p>Cliente Android com pareamento e acesso restrito. Homologação no aparelho e ampliação de capacidades são etapas futuras.</p></article>
+<article id="experiencia"><p class="tag">DIREÇÃO DE DESIGN</p><h3>Aurora Glass</h3><p>Uma experiência visual coesa para o desktop, com superfícies translúcidas e estados claros.</p></article>
+</div></section>
+<section class="shell section" id="roadmap"><p class="eyebrow">03 / PROGRESSO</p><h2>Do laboratório ao cotidiano.</h2><div class="timeline">
+<article><span class="phase">VALIDADO EM VM</span><h3>Alpha 0.3</h3><p>Instalação em disco virtual e boot UEFI sem ISO, com Niri, Noctalia, rede e silvos-cli. Não certifica hardware físico.</p></article>
+<article><span class="phase">EM HOMOLOGAÇÃO</span><h3>UNITY Aurora e Vulcano</h3><p>Integrar componentes, verificar instalação e demonstrar funcionalidades reais no ambiente autorizado.</p></article>
+<article id="atualizacoes"><span class="phase">PLANEJADO / EM VALIDAÇÃO</span><h3>Distribuição e atualização</h3><p>Pacotes assinados, atualização completa e recuperação; confirmar o estado do atualizador antes de oferecer comandos públicos.</p></article>
+<article><span class="phase">PLANEJADO</span><h3>Compatibilidade de hardware</h3><p>Uma base comum, perfis adaptativos de recursos e testes em diferentes GPUs, CPUs e capacidades de memória. Sem requisitos certificados por enquanto.</p></article>
+<article><span class="phase">FUTURO</span><h3>Beta público</h3><p>Somente após validação de segurança, licenças, instalação, atualizações e documentação para usuários.</p></article>
+</div><a class="textlink" href="https://github.com/silviodarko/silviodarko/blob/main/SILVOS_ROADMAP.md">Roadmap público no GitHub ↗</a></section>
+<section class="shell section" id="lancamento"><div class="closing"><p class="eyebrow">04 / CONSTRUÍDO NO BRASIL</p><h2>Independência, um commit de cada vez.</h2><p>O SilvOS está em desenvolvimento ativo. O repositório de engenharia permanece privado; o perfil público reúne projetos, documentação e marcos verificados. Nenhuma data de lançamento anunciada.</p><a class="primary" href="https://github.com/silviodarko">Acompanhar no GitHub ↗</a></div></section>
+</main>
+<footer class="shell footer"><strong>SilvOS</strong><span>Projeto independente · Local-first · Built in Brazil</span><a href="#inicio">Voltar ao início ↑</a></footer>
+</body></html>
