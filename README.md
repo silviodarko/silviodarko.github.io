@@ -5,7 +5,7 @@
 
 **Your system. Your rules.**
 
-Site público do **SilvOS**, um projeto independente de Linux com identidade Liquid Glass, IA local **Jarvis** e foco em privacidade, transparência e controle do usuário.
+Site público do **SilvOS**, um projeto independente de Linux com identidade Liquid Glass, IA local **UNITY** e foco em privacidade, transparência e controle do usuário.
 
 ### Website
 
@@ -35,10 +35,14 @@ O criador participa do **[GitHub Developer Program](https://github.com/developer
 
 ### Desenvolvimento e privacidade
 
-Este repositório hospeda **apenas o site público**. O código principal da distribuição SilvOS permanece em repositório privado separado. A demonstração do Jarvis na página é conceitual e não envia comandos nem acessa dados pessoais.
+Este repositório hospeda **apenas o site público**. O código principal da distribuição SilvOS permanece em repositório privado separado. A demonstração do UNITY na página é conceitual e não envia comandos nem acessa dados pessoais.
 
-Para editar a página, altere `index.html`, `styles.css`, `app.js` ou os arquivos SVG. O GitHub Pages pode publicar a partir da branch `main`, pasta `/(root)`.
+A prévia Renascimento usa `index.html`, `renascimento.css` e `renascimento-social.svg`. Os arquivos anteriores são preservados para revisão e rollback. O GitHub Pages pode publicar a partir da branch `main`, pasta `/(root)`.
 
 ---
 
 Built in Brazil · Independent Linux project.
+
+## Prévia Renascimento
+
+A nova página apresenta UNITY Aurora, VULCANO, Mnemosyne, NEXUS e UNITY Mobile com estados explícitos de maturidade. A esfera é uma ilustração conceitual, não captura do produto. Sem nova ISO, data de lançamento ou download anunciado. A branch é uma prévia pública; não mesclar antes de revisão visual e confirmação dos marcos.
