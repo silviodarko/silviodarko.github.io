@@ -1,44 +1,30 @@
-# SilvOS · Official Website
-
-[![Website](https://img.shields.io/badge/Website-silviodarko.github.io-66BDE8?style=for-the-badge)](https://silviodarko.github.io/)
-[![Status](https://img.shields.io/badge/Status-Pre--release-22404D?style=for-the-badge)](https://silviodarko.github.io/)
+# SilvOS · Official website / Site oficial
 
 **Your system. Your rules.**
 
-Site público do **SilvOS**, um projeto independente de Linux com identidade Liquid Glass, IA local **Jarvis** e foco em privacidade, transparência e controle do usuário.
+[Site público](https://silviodarko.github.io/) · [Perfil](https://github.com/silviodarko) · [Roadmap](https://github.com/silviodarko/silviodarko/blob/main/SILVOS_ROADMAP.md)
 
-### Website
+Site institucional de um projeto Linux independente, em pré-lançamento. Apresenta Aurora Glass, UNITY, Vulcano, Mnemosyne, NEXUS, Mobile e a evolução da distribuição, com estados distintos de maturidade.
 
-https://silviodarko.github.io/
+## Renascimento
 
-### Roadmap e desenvolvimento
+- `index.html`: português brasileiro.
+- `en.html`: inglês.
+- `renascimento.css`: identidade visual responsiva compartilhada.
+- `renascimento-social.svg`: imagem conceitual de compartilhamento.
+- `favicon.svg`: identidade existente preservada.
+- `brand.html` e `brand/*.svg`: estúdio de marcas conceituais; sete símbolos vetoriais locais.
 
-- [Roadmap público](https://github.com/silviodarko/silviodarko/blob/main/SILVOS_ROADMAP.md)
-- [Perfil e portfólio técnico](https://github.com/silviodarko)
-- Status: **Alpha 0.3 instalável homologada em QEMU UEFI** (disco qcow2 descartável, Niri, Noctalia, rede, silvos-cli e SHA-256 do disco sentinela). Ainda sem ISO pública, instalador certificado para hardware real ou data anunciada.
+O FAQ esclarece disponibilidade, hardware, permissões e licenciamento. A âncora histórica `#jarvis` continua apontando para a seção UNITY.
 
-### Próximo marco: silvos update
+HTML e CSS locais, sem JavaScript ativo, fontes externas, analytics, formulários, cookies ou chamadas ao gateway. A esfera é uma ilustração CSS, não captura do produto nem assistente conectado. Os arquivos anteriores permanecem para revisão e recuperação.
 
-- `silvos-cli` empacotado e exercitado em contêiner Arch descartável.
-- Assinatura GPG **temporária** testada em repositório experimental, sem chave de release.
-- `silvos update --check` funciona em laboratório, consultando somente a base local.
-- `silvos update` permanece **bloqueado** até validar repositório assinado, upgrade N → N+1 e recuperação em VM.
-- Terminal exibido no site é **prévia conceitual**, não comando executado.
+## Estado e publicação
 
-### Tecnologias da landing page
+Alpha 0.3 validada em QEMU UEFI, não em hardware físico. Aurora e Vulcano ainda em integração/homologação; Mobile experimental. Sem ISO pública, requisitos certificados ou data anunciada. O canal de atualização da distribuição permanece sujeito a validação.
 
-HTML sem framework, CSS responsivo e JavaScript progressivo, com recursos visuais locais. Sem analytics, fontes externas, formulários, rastreadores ou cookies.
+Antes de publicar: conferir as páginas nos navegadores e em viewport móvel, validar navegação e metadados, revisar evidências e aprovar a mudança da branch oficial. A participação individual no GitHub Developer Program não é parceria ou endosso.
 
-### Developer Program
-
-O criador participa do **[GitHub Developer Program](https://github.com/developer)**, estudando e desenvolvendo integrações com a GitHub API. A participação é individual, sem associação ou endosso oficial do GitHub ao SilvOS.
-
-### Desenvolvimento e privacidade
-
-Este repositório hospeda **apenas o site público**. O código principal da distribuição SilvOS permanece em repositório privado separado. A demonstração do Jarvis na página é conceitual e não envia comandos nem acessa dados pessoais.
-
-Para editar a página, altere `index.html`, `styles.css`, `app.js` ou os arquivos SVG. O GitHub Pages pode publicar a partir da branch `main`, pasta `/(root)`.
-
----
+O repositório de engenharia permanece privado. Não publicar segredos, endpoints operacionais, logs privados ou imagens sem revisão.
 
 Built in Brazil · Independent Linux project.
