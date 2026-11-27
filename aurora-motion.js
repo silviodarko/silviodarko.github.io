@@ -22,7 +22,7 @@
     art.classList.toggle('motion-running', !stopped);
     art.classList.toggle('motion-paused', paused || reduced.matches);
     toggle.setAttribute('aria-pressed', String(paused || reduced.matches));
-    toggle.textContent = paused || reduced.matches ? toggle.dataset.resume : toggle.dataset.pause;
+    toggle.textContent = reduced.matches ? toggle.dataset.reduced : paused ? toggle.dataset.resume : toggle.dataset.pause;
     toggle.disabled = reduced.matches;
     if (stopped || !fine.matches) reset();
   };
