@@ -12,12 +12,13 @@ Site institucional de um projeto Linux independente, em pré-lançamento. Aprese
 - `en.html`: inglês.
 - `renascimento.css`: identidade visual responsiva compartilhada.
 - `renascimento-social.svg`: imagem conceitual de compartilhamento.
-- `favicon.svg`: identidade existente preservada.
+- `favicon.svg`: monograma Aurora Depth, com a geometria original preservada.
+- `aurora-motion.js`: aprimoramento progressivo e local da esfera.
 - `brand.html` e `brand/*.svg`: estúdio de marcas conceituais; sete símbolos vetoriais locais.
 
 O FAQ esclarece disponibilidade, hardware, permissões e licenciamento. A âncora histórica `#jarvis` continua apontando para a seção UNITY.
 
-HTML e CSS locais, sem JavaScript ativo, fontes externas, analytics, formulários, cookies ou chamadas ao gateway. A esfera é uma ilustração CSS, não captura do produto nem assistente conectado. Os arquivos anteriores permanecem para revisão e recuperação.
+HTML, CSS e JavaScript locais, sem fontes externas, analytics, formulários, cookies ou chamadas ao gateway. Aurora Motion habilita a animação apenas enquanto visível e respeita a preferência de movimento reduzido, a pausa manual e a visibilidade da aba. Reflexos seguem o ponteiro somente em dispositivos com mouse. Sem JavaScript, a esfera permanece estática. A esfera é uma ilustração CSS, não captura do produto nem assistente conectado. Os arquivos anteriores permanecem para revisão e recuperação.
 
 ## Estado e publicação
 
